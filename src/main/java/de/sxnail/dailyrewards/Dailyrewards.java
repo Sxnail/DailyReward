@@ -16,9 +16,13 @@ public class Dailyrewards {
 
     public static final String MODID = "dailyrewards";
 
-    private static final Logger LOGGER = LogUtils.getLogger();
+    private static final Logger LOGGER =
+            LogUtils.getLogger();
 
-    public Dailyrewards(IEventBus modEventBus, ModContainer modContainer) {
+    public Dailyrewards(
+            IEventBus modEventBus,
+            ModContainer modContainer
+    ) {
 
         NeoForge.EVENT_BUS.register(this);
 
@@ -29,26 +33,34 @@ public class Dailyrewards {
     }
 
     @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event) {
+    public void onServerStarting(
+            ServerStartingEvent event
+    ) {
 
-        RewardSavedData data =
-                RewardSavedData.get(event.getServer());
-
-        data.increaseCounter();
+        RewardSavedData.get(
+                event.getServer()
+        );
 
         LOGGER.info(
-                "DailyRewards gestartet. Counter: "
-                        + data.getSaveCounter()
+                "DailyRewards gestartet"
         );
     }
 
     @SubscribeEvent
-    public void onRegisterCommands(RegisterCommandsEvent event) {
+    public void onRegisterCommands(
+            RegisterCommandsEvent event
+    ) {
 
-        RewardCommand.register(event.getDispatcher());
+        RewardCommand.register(
+                event.getDispatcher()
+        );
 
-        DailyClaimCommand.register(event.getDispatcher());
+        DailyClaimCommand.register(
+                event.getDispatcher()
+        );
 
-        PlaytimeRewardCommand.register(event.getDispatcher());
+        PlaytimeRewardCommand.register(
+                event.getDispatcher()
+        );
     }
 }

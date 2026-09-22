@@ -5,11 +5,16 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.world.level.saveddata.SavedData;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
+
 public class RewardSavedData extends SavedData {
 
     public static final String DATA_NAME = "dailyrewards";
 
-    private int saveCounter = 0;
+    private final Map<UUID, PlayerRewardData> playerData =
+            new HashMap<>();
 
     public RewardSavedData() {
     }
@@ -20,10 +25,18 @@ public class RewardSavedData extends SavedData {
             HolderLookup.Provider provider
     ) {
 
-        tag.putInt(
-                "saveCounter",
-                saveCounter
-        );
+        CompoundTag playersTag =
+                new CompoundTag();
+
+        for (Map.Entry<UUID, PlayerRewardData> entry : playerData.entrySet()) {
+
+            playersTag.put(
+                    entry.getKey().toString(),
+                    entry.getValue().save()
+            );
+        }
+
+        tag.put("players", playersTag);
 
         return tag;
     }
@@ -36,8 +49,28 @@ public class RewardSavedData extends SavedData {
         RewardSavedData data =
                 new RewardSavedData();
 
-        data.saveCounter =
-                tag.getInt("saveCounter");
+        CompoundTag playersTag =
+                tag.getCompound("players");
+
+        for (String key : playersTag.getAllKeys()) {
+
+            UUID uuid =
+                    UUID.fromString(key);
+
+            PlayerRewardData playerData =
+                    PlayerRewardData.load(
+                            playersTag.getCompound(key)
+                    );
+
+            data.playerData.put(
+                    uuid,
+                    playerData
+            );
+        }
+
+        RewardDataManager.setAllData(
+                data.playerData
+        );
 
         return data;
     }
@@ -57,14 +90,21 @@ public class RewardSavedData extends SavedData {
                 );
     }
 
-    public void increaseCounter() {
+    public PlayerRewardData getPlayerData(
+            UUID uuid
+    ) {
 
-        saveCounter++;
-
-        setDirty();
+        return playerData.computeIfAbsent(
+                uuid,
+                u -> new PlayerRewardData()
+        );
     }
 
-    public int getSaveCounter() {
-        return saveCounter;
+    public Map<UUID, PlayerRewardData> getPlayerDataMap() {
+        return playerData;
+    }
+
+    public void markDirty() {
+        setDirty();
     }
 }

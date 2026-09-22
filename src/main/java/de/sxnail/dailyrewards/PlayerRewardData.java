@@ -1,6 +1,6 @@
 package de.sxnail.dailyrewards;
 
-import java.time.LocalDate;
+import net.minecraft.nbt.CompoundTag;
 
 public class PlayerRewardData {
 
@@ -31,5 +31,35 @@ public class PlayerRewardData {
 
     public void setActiveMinutesToday(int activeMinutesToday) {
         this.activeMinutesToday = activeMinutesToday;
+    }
+
+    public CompoundTag save() {
+
+        CompoundTag tag = new CompoundTag();
+
+        tag.putString("lastDailyClaim", lastDailyClaim);
+        tag.putString("lastPlaytimeClaim", lastPlaytimeClaim);
+        tag.putInt("activeMinutesToday", activeMinutesToday);
+
+        return tag;
+    }
+
+    public static PlayerRewardData load(
+            CompoundTag tag
+    ) {
+
+        PlayerRewardData data =
+                new PlayerRewardData();
+
+        data.lastDailyClaim =
+                tag.getString("lastDailyClaim");
+
+        data.lastPlaytimeClaim =
+                tag.getString("lastPlaytimeClaim");
+
+        data.activeMinutesToday =
+                tag.getInt("activeMinutesToday");
+
+        return data;
     }
 }

@@ -13,7 +13,17 @@ public class RewardDataManager {
         return PLAYER_DATA;
     }
 
-    public static PlayerRewardData getPlayerData(UUID uuid) {
+    public static void setAllData(
+            Map<UUID, PlayerRewardData> newData
+    ) {
+
+        PLAYER_DATA.clear();
+        PLAYER_DATA.putAll(newData);
+    }
+
+    public static PlayerRewardData getPlayerData(
+            UUID uuid
+    ) {
 
         return PLAYER_DATA.computeIfAbsent(
                 uuid,

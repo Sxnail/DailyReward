@@ -28,13 +28,13 @@ public class DailyClaimCommand {
 
                             UUID uuid = player.getUUID();
 
-                            LocalDate today =
-                                    LocalDate.now(TIMEZONE);
+                            String today =
+                                    LocalDate.now(TIMEZONE).toString();
 
                             PlayerRewardData data =
                                     RewardDataManager.getPlayerData(uuid);
 
-                            if (today.toString().equals(data.getLastDailyClaim())) {
+                            if (today.equals(data.getLastDailyClaim())) {
 
                                 context.getSource().sendSuccess(
                                         () -> Component.literal(
@@ -46,7 +46,7 @@ public class DailyClaimCommand {
                                 return 1;
                             }
 
-                            data.setLastDailyClaim(today.toString());
+                            data.setLastDailyClaim(today);
 
                             ItemStack reward =
                                     new ItemStack(

@@ -17,24 +17,33 @@ public class PlaytimeRewardCommand {
     private static final ZoneId TIMEZONE =
             ZoneId.of("Europe/Berlin");
 
-    public static void register(CommandDispatcher<CommandSourceStack> dispatcher) {
+    public static void register(
+            CommandDispatcher<CommandSourceStack> dispatcher
+    ) {
 
         dispatcher.register(
                 Commands.literal("playreward")
                         .executes(context -> {
 
                             ServerPlayer player =
-                                    context.getSource().getPlayerOrException();
+                                    context.getSource()
+                                            .getPlayerOrException();
 
-                            UUID uuid = player.getUUID();
+                            UUID uuid =
+                                    player.getUUID();
 
-                            LocalDate today =
-                                    LocalDate.now(TIMEZONE);
+                            String today =
+                                    LocalDate.now(TIMEZONE)
+                                            .toString();
 
                             PlayerRewardData data =
-                                    RewardDataManager.getPlayerData(uuid);
+                                    RewardDataManager.getPlayerData(
+                                            uuid
+                                    );
 
-                            if (today.toString().equals(data.getLastPlaytimeClaim())) {
+                            if (today.equals(
+                                    data.getLastPlaytimeClaim()
+                            )) {
 
                                 context.getSource().sendSuccess(
                                         () -> Component.literal(
@@ -46,12 +55,17 @@ public class PlaytimeRewardCommand {
                                 return 1;
                             }
 
-                            if (data.getActiveMinutesToday() < Config.requiredMinutes) {
+                            if (data.getActiveMinutesToday()
+                                    < Config.requiredMinutes) {
+
+                                int remaining =
+                                        Config.requiredMinutes
+                                                - data.getActiveMinutesToday();
 
                                 context.getSource().sendSuccess(
                                         () -> Component.literal(
                                                 "§eNoch "
-                                                        + (Config.requiredMinutes - data.getActiveMinutesToday())
+                                                        + remaining
                                                         + " Minuten spielen."
                                         ),
                                         false
@@ -60,7 +74,9 @@ public class PlaytimeRewardCommand {
                                 return 1;
                             }
 
-                            data.setLastPlaytimeClaim(today.toString());
+                            data.setLastPlaytimeClaim(
+                                    today
+                            );
 
                             ItemStack reward =
                                     new ItemStack(
@@ -69,7 +85,9 @@ public class PlaytimeRewardCommand {
                                     );
 
                             player.getInventory()
-                                    .placeItemBackInInventory(reward);
+                                    .placeItemBackInInventory(
+                                            reward
+                                    );
 
                             context.getSource().sendSuccess(
                                     () -> Component.literal(
