@@ -21,7 +21,8 @@ public class RewardCommand {
                         .executes(context -> {
 
                             ServerPlayer player =
-                                    context.getSource().getPlayerOrException();
+                                    context.getSource()
+                                            .getPlayerOrException();
 
                             PlayerRewardData data =
                                     RewardDataManager.getPlayerData(
@@ -29,7 +30,8 @@ public class RewardCommand {
                                     );
 
                             String today =
-                                    LocalDate.now(TIMEZONE).toString();
+                                    LocalDate.now(TIMEZONE)
+                                            .toString();
 
                             boolean dailyClaimed =
                                     today.equals(
@@ -39,6 +41,11 @@ public class RewardCommand {
                             boolean playtimeClaimed =
                                     today.equals(
                                             data.getLastPlaytimeClaim()
+                                    );
+
+                            boolean afk =
+                                    AfkTracker.isPlayerAfk(
+                                            player.getUUID()
                                     );
 
                             context.getSource().sendSuccess(
@@ -59,6 +66,11 @@ public class RewardCommand {
                                                     + "/" +
                                                     Config.requiredMinutes +
                                                     " Minuten\n" +
+                                                    "§fStatus: " +
+                                                    (afk
+                                                            ? "§cAFK"
+                                                            : "§aAktiv")
+                                                    + "\n" +
                                                     "§fDaily Coins: §a" +
                                                     Config.dailyCoins +
                                                     "\n" +

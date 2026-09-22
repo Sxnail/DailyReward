@@ -48,6 +48,12 @@ public class DailyClaimCommand {
 
                             data.setLastDailyClaim(today);
 
+                            RewardDataManager.saveToWorld(
+                                    RewardSavedData.get(
+                                            player.server
+                                    )
+                            );
+
                             ItemStack reward =
                                     new ItemStack(
                                             Items.EMERALD,
@@ -59,9 +65,9 @@ public class DailyClaimCommand {
 
                             context.getSource().sendSuccess(
                                     () -> Component.literal(
-                                            "§aDaily Reward abgeholt! +" +
-                                                    Config.dailyCoins +
-                                                    " Emeralds"
+                                            "§aDaily Reward abgeholt! +"
+                                                    + Config.dailyCoins
+                                                    + " Emeralds"
                                     ),
                                     false
                             );

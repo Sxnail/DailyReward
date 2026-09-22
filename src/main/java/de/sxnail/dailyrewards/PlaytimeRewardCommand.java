@@ -74,8 +74,12 @@ public class PlaytimeRewardCommand {
                                 return 1;
                             }
 
-                            data.setLastPlaytimeClaim(
-                                    today
+                            data.setLastPlaytimeClaim(today);
+
+                            RewardDataManager.saveToWorld(
+                                    RewardSavedData.get(
+                                            player.server
+                                    )
                             );
 
                             ItemStack reward =

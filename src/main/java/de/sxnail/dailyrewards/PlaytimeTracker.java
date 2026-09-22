@@ -12,7 +12,8 @@ import java.util.UUID;
 @EventBusSubscriber(modid = Dailyrewards.MODID)
 public class PlaytimeTracker {
 
-    private static final Map<UUID, Integer> TICKS = new HashMap<>();
+    private static final Map<UUID, Integer> TICKS =
+            new HashMap<>();
 
     @SubscribeEvent
     public static void onPlayerTick(PlayerTickEvent.Post event) {
@@ -21,11 +22,16 @@ public class PlaytimeTracker {
             return;
         }
 
+        if (AfkTracker.isAfk(player)) {
+            return;
+        }
+
         UUID uuid = player.getUUID();
 
-        int ticks = TICKS.getOrDefault(uuid, 0) + 1;
+        int ticks =
+                TICKS.getOrDefault(uuid, 0) + 1;
 
-        // 1200 Ticks = 60 Sekunden
+        // 1200 Ticks = 60 Sekunden = 1 Minute
         if (ticks >= 1200) {
 
             PlayerRewardData data =
@@ -33,6 +39,12 @@ public class PlaytimeTracker {
 
             data.setActiveMinutesToday(
                     data.getActiveMinutesToday() + 1
+            );
+
+            RewardDataManager.saveToWorld(
+                    RewardSavedData.get(
+                            player.server
+                    )
             );
 
             ticks = 0;

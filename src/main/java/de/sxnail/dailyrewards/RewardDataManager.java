@@ -30,4 +30,17 @@ public class RewardDataManager {
                 id -> new PlayerRewardData()
         );
     }
+
+    public static void saveToWorld(
+            RewardSavedData saveData
+    ) {
+
+        saveData.getPlayerDataMap().clear();
+
+        saveData.getPlayerDataMap().putAll(
+                PLAYER_DATA
+        );
+
+        saveData.markDirty();
+    }
 }

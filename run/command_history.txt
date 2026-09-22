@@ -21,3 +21,10 @@
 /rewards
 /playreward
 /rewards
+/daily
+/rewards
+/daily
+/rewards
+/daily
+/playreward
+/rewards
