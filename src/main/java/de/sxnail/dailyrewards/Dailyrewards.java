@@ -30,11 +30,25 @@ public class Dailyrewards {
 
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
-        LOGGER.info("DailyRewards gestartet");
+
+        RewardSavedData data =
+                RewardSavedData.get(event.getServer());
+
+        data.increaseCounter();
+
+        LOGGER.info(
+                "DailyRewards gestartet. Counter: "
+                        + data.getSaveCounter()
+        );
     }
 
     @SubscribeEvent
     public void onRegisterCommands(RegisterCommandsEvent event) {
+
         RewardCommand.register(event.getDispatcher());
+
+        DailyClaimCommand.register(event.getDispatcher());
+
+        PlaytimeRewardCommand.register(event.getDispatcher());
     }
 }
