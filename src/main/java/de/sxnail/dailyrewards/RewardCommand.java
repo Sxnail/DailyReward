@@ -6,8 +6,10 @@ import net.minecraft.commands.Commands;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 
+import java.time.Duration;
 import java.time.LocalDate;
 import java.time.ZoneId;
+import java.time.ZonedDateTime;
 
 public class RewardCommand {
 
@@ -33,6 +35,26 @@ public class RewardCommand {
                                     LocalDate.now(TIMEZONE)
                                             .toString();
 
+                            ZonedDateTime now =
+                                    ZonedDateTime.now(TIMEZONE);
+
+                            ZonedDateTime nextMidnight =
+                                    now.toLocalDate()
+                                            .plusDays(1)
+                                            .atStartOfDay(TIMEZONE);
+
+                            Duration duration =
+                                    Duration.between(
+                                            now,
+                                            nextMidnight
+                                    );
+
+                            long hours =
+                                    duration.toHours();
+
+                            long minutes =
+                                    duration.toMinutesPart();
+
                             boolean dailyClaimed =
                                     today.equals(
                                             data.getLastDailyClaim()
@@ -48,29 +70,44 @@ public class RewardCommand {
                                             player.getUUID()
                                     );
 
+                            int remainingPlaytime =
+                                    Math.max(
+                                            0,
+                                            Config.requiredMinutes
+                                                    - data.getActiveMinutesToday()
+                                    );
+
                             context.getSource().sendSuccess(
                                     () -> Component.literal(
                                             "\n§6=== Daily Rewards ===\n" +
                                                     "§fDaily Reward: " +
                                                     (dailyClaimed
                                                             ? "§cAbgeholt"
-                                                            : "§aVerfügbar")
-                                                    + "\n" +
+                                                            : "§aVerfügbar") +
+                                                    "\n" +
+                                                    "§fNächster Daily in: §e" +
+                                                    hours +
+                                                    "h " +
+                                                    minutes +
+                                                    "m\n\n" +
                                                     "§fPlaytime Reward: " +
                                                     (playtimeClaimed
                                                             ? "§cAbgeholt"
-                                                            : "§aVerfügbar")
-                                                    + "\n" +
+                                                            : "§aVerfügbar") +
+                                                    "\n" +
                                                     "§fAktive Spielzeit: §e" +
-                                                    data.getActiveMinutesToday()
-                                                    + "/" +
+                                                    data.getActiveMinutesToday() +
+                                                    "/" +
                                                     Config.requiredMinutes +
+                                                    " Minuten\n" +
+                                                    "§fVerbleibend: §e" +
+                                                    remainingPlaytime +
                                                     " Minuten\n" +
                                                     "§fStatus: " +
                                                     (afk
                                                             ? "§cAFK"
-                                                            : "§aAktiv")
-                                                    + "\n" +
+                                                            : "§aAktiv") +
+                                                    "\n\n" +
                                                     "§fDaily Coins: §a" +
                                                     Config.dailyCoins +
                                                     "\n" +
