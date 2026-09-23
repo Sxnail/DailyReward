@@ -28,3 +28,7 @@
 /daily
 /playreward
 /rewards
+/daily
+/rewards
+/daily
+/playreward

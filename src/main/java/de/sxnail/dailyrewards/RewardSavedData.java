@@ -11,7 +11,8 @@ import java.util.UUID;
 
 public class RewardSavedData extends SavedData {
 
-    public static final String DATA_NAME = "dailyrewards";
+    public static final String DATA_NAME =
+            "dailyrewards";
 
     private final Map<UUID, PlayerRewardData> playerData =
             new HashMap<>();
@@ -28,7 +29,8 @@ public class RewardSavedData extends SavedData {
         CompoundTag playersTag =
                 new CompoundTag();
 
-        for (Map.Entry<UUID, PlayerRewardData> entry : playerData.entrySet()) {
+        for (Map.Entry<UUID, PlayerRewardData> entry
+                : playerData.entrySet()) {
 
             playersTag.put(
                     entry.getKey().toString(),
@@ -36,7 +38,10 @@ public class RewardSavedData extends SavedData {
             );
         }
 
-        tag.put("players", playersTag);
+        tag.put(
+                "players",
+                playersTag
+        );
 
         return tag;
     }
@@ -67,10 +72,6 @@ public class RewardSavedData extends SavedData {
                     playerData
             );
         }
-
-        RewardDataManager.setAllData(
-                data.playerData
-        );
 
         return data;
     }

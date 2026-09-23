@@ -6,7 +6,6 @@ import net.minecraft.commands.Commands;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 
 import java.time.LocalDate;
 import java.time.ZoneId;
@@ -26,15 +25,26 @@ public class DailyClaimCommand {
                             ServerPlayer player =
                                     context.getSource().getPlayerOrException();
 
-                            UUID uuid = player.getUUID();
+                            UUID uuid =
+                                    player.getUUID();
 
-                            String today =
-                                    LocalDate.now(TIMEZONE).toString();
+                            RewardSavedData saveData =
+                                    RewardSavedData.get(
+                                            player.server
+                                    );
 
                             PlayerRewardData data =
-                                    RewardDataManager.getPlayerData(uuid);
+                                    saveData.getPlayerData(
+                                            uuid
+                                    );
 
-                            if (today.equals(data.getLastDailyClaim())) {
+                            String today =
+                                    LocalDate.now(TIMEZONE)
+                                            .toString();
+
+                            if (today.equals(
+                                    data.getLastDailyClaim()
+                            )) {
 
                                 context.getSource().sendSuccess(
                                         () -> Component.literal(
@@ -48,26 +58,22 @@ public class DailyClaimCommand {
 
                             data.setLastDailyClaim(today);
 
-                            RewardDataManager.saveToWorld(
-                                    RewardSavedData.get(
-                                            player.server
-                                    )
-                            );
+                            saveData.markDirty();
 
                             ItemStack reward =
                                     new ItemStack(
-                                            Items.EMERALD,
-                                            Config.dailyCoins
+                                            RewardItems.getDailyItem(),
+                                            Config.dailyAmount
                                     );
 
                             player.getInventory()
-                                    .placeItemBackInInventory(reward);
+                                    .placeItemBackInInventory(
+                                            reward
+                                    );
 
                             context.getSource().sendSuccess(
                                     () -> Component.literal(
-                                            "§aDaily Reward abgeholt! +"
-                                                    + Config.dailyCoins
-                                                    + " Emeralds"
+                                            "§aDaily Reward abgeholt!"
                                     ),
                                     false
                             );

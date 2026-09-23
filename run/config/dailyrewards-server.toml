@@ -1,0 +1,26 @@
+#Enable Daily Rewards
+dailyRewardEnabled = true
+#Enable Playtime Rewards
+playtimeRewardEnabled = true
+#Daily reward amount
+# Default: 25
+# Range: 1 ~ 100000
+dailyAmount = 25
+#Playtime reward amount
+# Default: 10
+# Range: 1 ~ 100000
+playtimeAmount = 10
+#Minutes required for playtime reward
+# Default: 60
+# Range: 1 ~ 1440
+requiredMinutes = 60
+#Minutes before AFK
+# Default: 5
+# Range: 1 ~ 120
+afkMinutes = 5
+#Daily reward item
+dailyItem = "minecraft:emerald"
+#Playtime reward item
+playtimeItem = "minecraft:emerald"
+#Timezone
+timezone = "Europe/Berlin"

@@ -6,7 +6,6 @@ import net.minecraft.commands.Commands;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 
 import java.time.LocalDate;
 import java.time.ZoneId;
@@ -32,14 +31,19 @@ public class PlaytimeRewardCommand {
                             UUID uuid =
                                     player.getUUID();
 
+                            RewardSavedData saveData =
+                                    RewardSavedData.get(
+                                            player.server
+                                    );
+
+                            PlayerRewardData data =
+                                    saveData.getPlayerData(
+                                            uuid
+                                    );
+
                             String today =
                                     LocalDate.now(TIMEZONE)
                                             .toString();
-
-                            PlayerRewardData data =
-                                    RewardDataManager.getPlayerData(
-                                            uuid
-                                    );
 
                             if (today.equals(
                                     data.getLastPlaytimeClaim()
@@ -76,16 +80,12 @@ public class PlaytimeRewardCommand {
 
                             data.setLastPlaytimeClaim(today);
 
-                            RewardDataManager.saveToWorld(
-                                    RewardSavedData.get(
-                                            player.server
-                                    )
-                            );
+                            saveData.markDirty();
 
                             ItemStack reward =
                                     new ItemStack(
-                                            Items.EMERALD,
-                                            Config.playtimeCoins
+                                            RewardItems.getPlaytimeItem(),
+                                            Config.playtimeAmount
                                     );
 
                             player.getInventory()
@@ -95,9 +95,7 @@ public class PlaytimeRewardCommand {
 
                             context.getSource().sendSuccess(
                                     () -> Component.literal(
-                                            "§aPlaytime Reward abgeholt! +"
-                                                    + Config.playtimeCoins
-                                                    + " Emeralds"
+                                            "§aPlaytime Reward abgeholt!"
                                     ),
                                     false
                             );

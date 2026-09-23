@@ -26,26 +26,29 @@ public class PlaytimeTracker {
             return;
         }
 
-        UUID uuid = player.getUUID();
+        UUID uuid =
+                player.getUUID();
 
         int ticks =
                 TICKS.getOrDefault(uuid, 0) + 1;
 
-        // 1200 Ticks = 60 Sekunden = 1 Minute
         if (ticks >= 1200) {
 
+            RewardSavedData saveData =
+                    RewardSavedData.get(
+                            player.server
+                    );
+
             PlayerRewardData data =
-                    RewardDataManager.getPlayerData(uuid);
+                    saveData.getPlayerData(
+                            uuid
+                    );
 
             data.setActiveMinutesToday(
                     data.getActiveMinutesToday() + 1
             );
 
-            RewardDataManager.saveToWorld(
-                    RewardSavedData.get(
-                            player.server
-                    )
-            );
+            saveData.markDirty();
 
             ticks = 0;
         }

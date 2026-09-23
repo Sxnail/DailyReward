@@ -14,7 +14,8 @@ import org.slf4j.Logger;
 @Mod(Dailyrewards.MODID)
 public class Dailyrewards {
 
-    public static final String MODID = "dailyrewards";
+    public static final String MODID =
+            "dailyrewards";
 
     private static final Logger LOGGER =
             LogUtils.getLogger();
@@ -27,7 +28,7 @@ public class Dailyrewards {
         NeoForge.EVENT_BUS.register(this);
 
         modContainer.registerConfig(
-                ModConfig.Type.COMMON,
+                ModConfig.Type.SERVER,
                 Config.SPEC
         );
     }

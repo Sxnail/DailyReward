@@ -1,87 +1,252 @@
-[23Sept.2026 12:40:44.277] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientdev, --version, 21.1.251, --assetIndex, 17, --assetsDir, C:\\Users\\pauld\\.gradle\\caches\\neoformruntime\\assets, --gameDir, ., --fml.fmlVersion, 4.0.44, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.251, --fml.neoFormVersion, 20240808.144430]
-[23Sept.2026 12:40:44.280] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 21.0.8+12-LTS-250
-[23Sept.2026 12:40:44.281] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.8 by Oracle Corporation; OS Windows 11 arch amd64 version 10.0
-[23Sept.2026 12:40:44.397] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
-[23Sept.2026 12:40:44.527] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
-[23Sept.2026 12:40:44.968] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
-[23Sept.2026 12:40:45.054] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/pauld/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23138!/ Service=ModLauncher Env=CLIENT
-[23Sept.2026 12:40:45.262] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 4060/PCIe/SSE2 GL version 4.6.0 NVIDIA 616.92, NVIDIA Corporation
-[23Sept.2026 12:40:45.444] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
-[23Sept.2026 12:40:45.447] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
+[23Sept.2026 15:25:27.705] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientdev, --version, 21.1.251, --assetIndex, 17, --assetsDir, C:\\Users\\pauld\\.gradle\\caches\\neoformruntime\\assets, --gameDir, ., --fml.fmlVersion, 4.0.44, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.251, --fml.neoFormVersion, 20240808.144430]
+[23Sept.2026 15:25:27.709] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 21.0.8+12-LTS-250
+[23Sept.2026 15:25:27.710] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.8 by Oracle Corporation; OS Windows 11 arch amd64 version 10.0
+[23Sept.2026 15:25:27.822] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[23Sept.2026 15:25:27.936] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[23Sept.2026 15:25:28.277] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[23Sept.2026 15:25:28.425] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/pauld/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23138!/ Service=ModLauncher Env=CLIENT
+[23Sept.2026 15:25:28.642] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 4060/PCIe/SSE2 GL version 4.6.0 NVIDIA 616.92, NVIDIA Corporation
+[23Sept.2026 15:25:28.826] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[23Sept.2026 15:25:28.828] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
      Mod List:
 		Name Version (Mod Id)
 
 		DailyRewards 1.0-SNAPSHOT (dailyrewards)
 		Minecraft 1.21.1 (minecraft)
 		NeoForge 21.1.251 (neoforge)
-[23Sept.2026 12:40:46.579] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientdev' with arguments [--version, 21.1.251, --gameDir, ., --assetsDir, C:\Users\pauld\.gradle\caches\neoformruntime\assets, --assetIndex, 17]
-[23Sept.2026 12:40:48.594] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 229 Datafixer optimizations took 399 milliseconds
-[23Sept.2026 12:40:48.787] [pool-7-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.3).
-[23Sept.2026 12:40:53.958] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[23Sept.2026 12:40:53.959] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[23Sept.2026 12:40:53.961] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[23Sept.2026 12:40:53.962] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[23Sept.2026 12:40:53.963] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[23Sept.2026 12:40:54.103] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/pauld/Desktop/DailyRewardsuntitled/build/moddev/artifacts/neoforge-21.1.251.jar%23189!/assets/.mcassetsroot' uses unexpected schema
-[23Sept.2026 12:40:54.103] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/pauld/Desktop/DailyRewardsuntitled/build/moddev/artifacts/neoforge-21.1.251.jar%23189!/data/.mcassetsroot' uses unexpected schema
-[23Sept.2026 12:40:54.139] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[23Sept.2026 12:40:54.146] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[23Sept.2026 12:40:54.243] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
-[23Sept.2026 12:40:54.513] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.251, for MC 1.21.1
-[23Sept.2026 12:40:55.273] [Render thread/INFO] [net.neoforged.neoforge.gametest.GameTestHooks/]: Enabled Gametest Namespaces: [dailyrewards]
-[23Sept.2026 12:40:55.381] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/dailyrewards, mod/neoforge
-[23Sept.2026 12:40:55.579] [Worker-Main-13/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.05.hex, loading
-[23Sept.2026 12:40:55.681] [Worker-Main-8/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-15.1.05.hex, loading
-[23Sept.2026 12:40:57.353] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
-[23Sept.2026 12:40:57.354] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[23Sept.2026 12:40:57.597] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Kopfhörer (HyperX Cloud III Wireless)
-[23Sept.2026 12:40:57.597] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[23Sept.2026 12:40:57.677] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[23Sept.2026 12:40:57.686] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[23Sept.2026 12:40:57.686] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[23Sept.2026 12:40:57.687] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[23Sept.2026 12:40:57.687] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[23Sept.2026 12:40:57.690] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[23Sept.2026 12:40:57.690] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[23Sept.2026 12:40:57.691] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[23Sept.2026 12:40:57.691] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[23Sept.2026 12:40:57.880] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[23Sept.2026 12:40:57.881] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
-[23Sept.2026 12:40:57.882] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[23Sept.2026 12:40:57.882] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
-[23Sept.2026 12:40:57.882] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
-[23Sept.2026 12:40:57.902] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[23Sept.2026 12:40:57.957] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
-[23Sept.2026 12:42:08.583] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1290 recipes
-[23Sept.2026 12:42:08.755] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1399 advancements
-[23Sept.2026 12:42:09.120] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.1
-[23Sept.2026 12:42:09.120] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[23Sept.2026 12:42:09.833] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[23Sept.2026 12:42:10.098] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[23Sept.2026 12:42:10.171] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
-[23Sept.2026 12:42:10.176] [Server thread/INFO] [de.sxnail.dailyrewards.Dailyrewards/]: DailyRewards gestartet
-[23Sept.2026 12:42:10.177] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 325 ms
-[23Sept.2026 12:42:10.281] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
-[23Sept.2026 12:42:10.281] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
-[23Sept.2026 12:42:11.011] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:ddb27296] logged in with entity id 21 at (311.1344219249073, 65.0, -472.30274179714075)
-[23Sept.2026 12:42:11.088] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[23Sept.2026 12:42:11.392] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 55 advancements
-[23Sept.2026 12:42:23.647] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] \n=== Daily Rewards ===\nDaily Reward: Abgeholt\nNächster Daily in: 11h 17m\n\nPlaytime Reward: Verfügbar\nAktive Spielzeit: 10/60 Minuten\nVerbleibend: 50 Minuten\nStatus: Aktiv\n\nDaily Coins: 25\nPlaytime Coins: 10
-[23Sept.2026 12:43:25.529] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[23Sept.2026 12:43:25.545] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[23Sept.2026 12:43:25.558] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[23Sept.2026 12:43:25.559] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[23Sept.2026 12:43:26.645] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
-[23Sept.2026 12:43:26.684] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
-[23Sept.2026 12:43:26.684] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
-[23Sept.2026 12:43:26.694] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
-[23Sept.2026 12:43:26.733] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[23Sept.2026 12:43:26.733] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[23Sept.2026 12:43:26.733] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[23Sept.2026 12:43:27.033] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[23Sept.2026 12:43:27.318] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[23Sept.2026 12:43:27.324] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[23Sept.2026 12:43:27.335] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
-[23Sept.2026 12:43:27.335] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[23Sept.2026 12:43:27.335] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[23Sept.2026 12:43:27.335] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[23Sept.2026 15:25:29.890] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientdev' with arguments [--version, 21.1.251, --gameDir, ., --assetsDir, C:\Users\pauld\.gradle\caches\neoformruntime\assets, --assetIndex, 17]
+[23Sept.2026 15:25:32.078] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 229 Datafixer optimizations took 338 milliseconds
+[23Sept.2026 15:25:32.281] [pool-7-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.3).
+[23Sept.2026 15:25:37.421] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[23Sept.2026 15:25:37.423] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[23Sept.2026 15:25:37.426] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[23Sept.2026 15:25:37.428] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[23Sept.2026 15:25:37.429] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[23Sept.2026 15:25:37.606] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/pauld/Desktop/DailyRewardsuntitled/build/moddev/artifacts/neoforge-21.1.251.jar%23189!/assets/.mcassetsroot' uses unexpected schema
+[23Sept.2026 15:25:37.606] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/pauld/Desktop/DailyRewardsuntitled/build/moddev/artifacts/neoforge-21.1.251.jar%23189!/data/.mcassetsroot' uses unexpected schema
+[23Sept.2026 15:25:37.648] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[23Sept.2026 15:25:37.658] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[23Sept.2026 15:25:37.813] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
+[23Sept.2026 15:25:38.258] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.251, for MC 1.21.1
+[23Sept.2026 15:25:39.597] [Render thread/INFO] [net.neoforged.neoforge.gametest.GameTestHooks/]: Enabled Gametest Namespaces: [dailyrewards]
+[23Sept.2026 15:25:39.728] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/dailyrewards, mod/neoforge
+[23Sept.2026 15:25:39.939] [Worker-Main-13/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.05.hex, loading
+[23Sept.2026 15:25:39.978] [Worker-Main-8/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-15.1.05.hex, loading
+[23Sept.2026 15:25:41.517] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[23Sept.2026 15:25:41.517] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[23Sept.2026 15:25:41.769] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Kopfhörer (HyperX Cloud III Wireless)
+[23Sept.2026 15:25:41.770] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[23Sept.2026 15:25:41.887] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[23Sept.2026 15:25:41.896] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[23Sept.2026 15:25:41.896] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[23Sept.2026 15:25:41.897] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[23Sept.2026 15:25:41.897] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[23Sept.2026 15:25:41.900] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[23Sept.2026 15:25:41.900] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[23Sept.2026 15:25:41.900] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[23Sept.2026 15:25:41.900] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[23Sept.2026 15:25:42.109] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[23Sept.2026 15:25:42.111] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[23Sept.2026 15:25:42.111] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[23Sept.2026 15:25:42.111] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[23Sept.2026 15:25:42.111] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[23Sept.2026 15:25:42.134] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[23Sept.2026 15:25:42.189] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
+[23Sept.2026 15:25:49.247] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1290 recipes
+[23Sept.2026 15:25:49.521] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1399 advancements
+[23Sept.2026 15:25:51.760] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.1
+[23Sept.2026 15:25:51.760] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[23Sept.2026 15:25:55.836] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[23Sept.2026 15:25:55.880] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
+[23Sept.2026 15:25:56.341] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
+[23Sept.2026 15:25:56.867] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
+[23Sept.2026 15:25:57.342] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 18%
+[23Sept.2026 15:25:57.849] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 51%
+[23Sept.2026 15:25:58.348] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 51%
+[23Sept.2026 15:25:58.601] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 2763 ms
+[23Sept.2026 15:25:58.605] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[23Sept.2026 15:25:58.607] [Server thread/INFO] [de.sxnail.dailyrewards.Dailyrewards/]: DailyRewards gestartet
+[23Sept.2026 15:25:58.656] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
+[23Sept.2026 15:25:58.656] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[23Sept.2026 15:25:59.535] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:930c4325] logged in with entity id 28 at (88.5, 71.0, 105.5)
+[23Sept.2026 15:25:59.628] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[23Sept.2026 15:25:59.756] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 2 advancements
+[23Sept.2026 15:26:01.560] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[23Sept.2026 15:26:01.599] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[23Sept.2026 15:26:01.613] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[23Sept.2026 15:26:01.613] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[23Sept.2026 15:27:31.797] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Daily Reward abgeholt!
+[23Sept.2026 15:27:31.825] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 3 advancements
+[23Sept.2026 15:27:32.460] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[23Sept.2026 15:27:32.469] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[23Sept.2026 15:27:32.796] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[23Sept.2026 15:27:32.797] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[23Sept.2026 15:27:33.191] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[23Sept.2026 15:27:33.191] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[23Sept.2026 15:27:33.205] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[23Sept.2026 15:27:33.260] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[23Sept.2026 15:27:33.262] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[23Sept.2026 15:27:33.262] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[23Sept.2026 15:27:33.900] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[23Sept.2026 15:27:34.614] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[23Sept.2026 15:27:34.618] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[23Sept.2026 15:27:34.628] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World (2)): All chunks are saved
+[23Sept.2026 15:27:34.628] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[23Sept.2026 15:27:34.628] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[23Sept.2026 15:27:34.628] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[23Sept.2026 15:27:38.506] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1290 recipes
+[23Sept.2026 15:27:38.550] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1399 advancements
+[23Sept.2026 15:27:38.861] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.1
+[23Sept.2026 15:27:38.862] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[23Sept.2026 15:27:39.395] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[23Sept.2026 15:27:39.565] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[23Sept.2026 15:27:39.577] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[23Sept.2026 15:27:39.577] [Server thread/INFO] [de.sxnail.dailyrewards.Dailyrewards/]: DailyRewards gestartet
+[23Sept.2026 15:27:39.586] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 175 ms
+[23Sept.2026 15:27:39.680] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
+[23Sept.2026 15:27:39.680] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[23Sept.2026 15:27:39.869] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:c5a71175] logged in with entity id 688 at (91.69899800265324, 89.0, -197.79723143284548)
+[23Sept.2026 15:27:39.880] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[23Sept.2026 15:27:39.983] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 2 advancements
+[23Sept.2026 15:27:42.659] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Daily Reward abgeholt!
+[23Sept.2026 15:27:42.701] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 3 advancements
+[23Sept.2026 15:27:43.878] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[23Sept.2026 15:27:43.887] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[23Sept.2026 15:27:43.892] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[23Sept.2026 15:27:43.893] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[23Sept.2026 15:27:45.132] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[23Sept.2026 15:27:45.132] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[23Sept.2026 15:27:45.140] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[23Sept.2026 15:27:45.179] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[23Sept.2026 15:27:45.179] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[23Sept.2026 15:27:45.179] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[23Sept.2026 15:27:45.261] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[23Sept.2026 15:27:45.428] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[23Sept.2026 15:27:45.432] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[23Sept.2026 15:27:45.442] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World (1)): All chunks are saved
+[23Sept.2026 15:27:45.442] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[23Sept.2026 15:27:45.442] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[23Sept.2026 15:27:45.442] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[23Sept.2026 15:27:47.195] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1290 recipes
+[23Sept.2026 15:27:47.232] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1399 advancements
+[23Sept.2026 15:27:47.505] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.1
+[23Sept.2026 15:27:47.505] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[23Sept.2026 15:27:47.973] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[23Sept.2026 15:27:48.015] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[23Sept.2026 15:27:48.057] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[23Sept.2026 15:27:48.058] [Server thread/INFO] [de.sxnail.dailyrewards.Dailyrewards/]: DailyRewards gestartet
+[23Sept.2026 15:27:48.060] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 68 ms
+[23Sept.2026 15:27:48.069] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
+[23Sept.2026 15:27:48.069] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[23Sept.2026 15:27:48.267] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:5ebe737a] logged in with entity id 1004 at (91.69899800265324, 89.0, -197.79723143284548)
+[23Sept.2026 15:27:48.273] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[23Sept.2026 15:27:48.328] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 3 advancements
+[23Sept.2026 15:27:51.179] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Du hast dein Daily heute bereits abgeholt!
+[23Sept.2026 15:27:51.860] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[23Sept.2026 15:27:51.867] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[23Sept.2026 15:27:51.870] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[23Sept.2026 15:27:51.870] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[23Sept.2026 15:28:16.769] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] \n=== Daily Rewards ===\nDaily Reward: Abgeholt\nNächster Daily in: 8h 31m\n\nPlaytime Reward: Verfügbar\nAktive Spielzeit: 0/60 Minuten\nVerbleibend: 60 Minuten\nStatus: Aktiv\n\nDaily Belohnung: 25 Emerald\nPlaytime Belohnung: 10 Emerald
+[23Sept.2026 15:28:42.895] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
+[23Sept.2026 15:28:42.900] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
+[23Sept.2026 15:28:47.165] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 4 advancements
+[23Sept.2026 15:28:48.064] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
+[23Sept.2026 15:28:48.071] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
+[23Sept.2026 15:28:50.171] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 13 advancements
+[23Sept.2026 15:29:48.559] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[23Sept.2026 15:29:48.569] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[23Sept.2026 15:29:48.574] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[23Sept.2026 15:29:48.575] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[23Sept.2026 15:29:52.671] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] \n=== Daily Rewards ===\nDaily Reward: Abgeholt\nNächster Daily in: 8h 30m\n\nPlaytime Reward: Verfügbar\nAktive Spielzeit: 1/60 Minuten\nVerbleibend: 59 Minuten\nStatus: Aktiv\n\nDaily Belohnung: 25 Emerald\nPlaytime Belohnung: 10 Emerald
+[23Sept.2026 15:29:53.610] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[23Sept.2026 15:29:53.617] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[23Sept.2026 15:29:53.621] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[23Sept.2026 15:29:53.621] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[23Sept.2026 15:29:54.516] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[23Sept.2026 15:29:54.516] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[23Sept.2026 15:29:54.523] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[23Sept.2026 15:29:54.561] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[23Sept.2026 15:29:54.561] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[23Sept.2026 15:29:54.562] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[23Sept.2026 15:29:54.888] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[23Sept.2026 15:29:55.321] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[23Sept.2026 15:29:55.326] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[23Sept.2026 15:29:55.337] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World (1)): All chunks are saved
+[23Sept.2026 15:29:55.337] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[23Sept.2026 15:29:55.337] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[23Sept.2026 15:29:55.337] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[23Sept.2026 15:29:57.283] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1290 recipes
+[23Sept.2026 15:29:57.325] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1399 advancements
+[23Sept.2026 15:29:59.102] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.1
+[23Sept.2026 15:29:59.102] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[23Sept.2026 15:30:00.132] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[23Sept.2026 15:30:00.543] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
+[23Sept.2026 15:30:00.648] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
+[23Sept.2026 15:30:01.160] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 18%
+[23Sept.2026 15:30:01.658] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 51%
+[23Sept.2026 15:30:01.978] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[23Sept.2026 15:30:01.978] [Server thread/INFO] [de.sxnail.dailyrewards.Dailyrewards/]: DailyRewards gestartet
+[23Sept.2026 15:30:01.980] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
+[23Sept.2026 15:30:01.980] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[23Sept.2026 15:30:01.981] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 1840 ms
+[23Sept.2026 15:30:02.174] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:5e52e42f] logged in with entity id 2169 at (26.5, 78.0, -55.5)
+[23Sept.2026 15:30:02.187] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[23Sept.2026 15:30:02.315] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 2 advancements
+[23Sept.2026 15:30:10.220] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] \n=== Daily Rewards ===\nDaily Reward: Verfügbar\nNächster Daily in: 8h 29m\n\nPlaytime Reward: Verfügbar\nAktive Spielzeit: 0/60 Minuten\nVerbleibend: 60 Minuten\nStatus: Aktiv\n\nDaily Belohnung: 25 Emerald\nPlaytime Belohnung: 10 Emerald
+[23Sept.2026 15:30:11.329] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[23Sept.2026 15:30:11.339] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[23Sept.2026 15:30:11.343] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[23Sept.2026 15:30:11.343] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[23Sept.2026 15:30:12.582] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[23Sept.2026 15:30:12.582] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[23Sept.2026 15:30:12.590] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[23Sept.2026 15:30:12.605] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[23Sept.2026 15:30:12.605] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[23Sept.2026 15:30:12.605] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[23Sept.2026 15:30:13.314] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[23Sept.2026 15:30:14.463] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[23Sept.2026 15:30:14.468] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[23Sept.2026 15:30:14.478] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World (3)): All chunks are saved
+[23Sept.2026 15:30:14.480] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[23Sept.2026 15:30:14.480] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[23Sept.2026 15:30:14.480] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[23Sept.2026 15:30:21.450] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1290 recipes
+[23Sept.2026 15:30:21.478] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1399 advancements
+[23Sept.2026 15:30:39.609] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.1
+[23Sept.2026 15:30:39.609] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[23Sept.2026 15:30:40.692] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[23Sept.2026 15:30:40.716] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
+[23Sept.2026 15:30:41.208] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 18%
+[23Sept.2026 15:30:41.707] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 51%
+[23Sept.2026 15:30:41.965] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[23Sept.2026 15:30:41.965] [Server thread/INFO] [de.sxnail.dailyrewards.Dailyrewards/]: DailyRewards gestartet
+[23Sept.2026 15:30:41.966] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
+[23Sept.2026 15:30:41.966] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[23Sept.2026 15:30:41.968] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 1272 ms
+[23Sept.2026 15:30:42.150] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:23c8272f] logged in with entity id 2632 at (-7.5, 107.0, -4.5)
+[23Sept.2026 15:30:42.155] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[23Sept.2026 15:30:42.199] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 2 advancements
+[23Sept.2026 15:30:48.929] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] \n=== Daily Rewards ===\nDaily Reward: Verfügbar\nNächster Daily in: 8h 29m\n\nPlaytime Reward: Verfügbar\nAktive Spielzeit: 0/60 Minuten\nVerbleibend: 60 Minuten\nStatus: Aktiv\n\nDaily Belohnung: 25 Emerald\nPlaytime Belohnung: 10 Emerald
+[23Sept.2026 15:31:16.649] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Daily Reward abgeholt!
+[23Sept.2026 15:31:16.674] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 3 advancements
+[23Sept.2026 15:31:23.155] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Noch 60 Minuten spielen.
+[23Sept.2026 15:31:56.720] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
+[23Sept.2026 15:31:56.726] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
+[23Sept.2026 15:33:03.317] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[23Sept.2026 15:33:03.327] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test]'/minecraft:overworld
+[23Sept.2026 15:33:03.331] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test]'/minecraft:the_end
+[23Sept.2026 15:33:03.331] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test]'/minecraft:the_nether
+[23Sept.2026 15:33:03.923] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[23Sept.2026 15:33:03.923] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[23Sept.2026 15:33:03.930] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[23Sept.2026 15:33:03.967] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[23Sept.2026 15:33:03.967] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[23Sept.2026 15:33:03.967] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[23Sept.2026 15:33:04.364] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test]'/minecraft:overworld
+[23Sept.2026 15:33:05.085] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test]'/minecraft:the_end
+[23Sept.2026 15:33:05.091] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Test]'/minecraft:the_nether
+[23Sept.2026 15:33:05.101] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (Test): All chunks are saved
+[23Sept.2026 15:33:05.101] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[23Sept.2026 15:33:05.101] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[23Sept.2026 15:33:05.101] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[23Sept.2026 15:33:07.557] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!

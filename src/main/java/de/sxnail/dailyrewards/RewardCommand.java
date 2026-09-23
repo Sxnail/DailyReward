@@ -27,9 +27,12 @@ public class RewardCommand {
                                             .getPlayerOrException();
 
                             PlayerRewardData data =
-                                    RewardDataManager.getPlayerData(
-                                            player.getUUID()
-                                    );
+                                    RewardSavedData.get(
+                                                    player.server
+                                            )
+                                            .getPlayerData(
+                                                    player.getUUID()
+                                            );
 
                             String today =
                                     LocalDate.now(TIMEZONE)
@@ -108,11 +111,19 @@ public class RewardCommand {
                                                             ? "§cAFK"
                                                             : "§aAktiv") +
                                                     "\n\n" +
-                                                    "§fDaily Coins: §a" +
-                                                    Config.dailyCoins +
+                                                    "§fDaily Belohnung: §a" +
+                                                    Config.dailyAmount +
+                                                    " " +
+                                                    RewardItems.getDailyItem()
+                                                            .getDescription()
+                                                            .getString() +
                                                     "\n" +
-                                                    "§fPlaytime Coins: §a" +
-                                                    Config.playtimeCoins
+                                                    "§fPlaytime Belohnung: §a" +
+                                                    Config.playtimeAmount +
+                                                    " " +
+                                                    RewardItems.getPlaytimeItem()
+                                                            .getDescription()
+                                                            .getString()
                                     ),
                                     false
                             );
