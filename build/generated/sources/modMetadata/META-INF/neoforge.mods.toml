@@ -17,7 +17,7 @@ license = "All Rights Reserved"
 # The modid of the mod
 modId = "dailyrewards" #mandatory
 # The version number of the mod
-version = "1.0-SNAPSHOT" #mandatory
+version = "1.1" #mandatory
 # A display name for the mod
 displayName = "DailyRewards" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification https://docs.neoforge.net/docs/misc/updatechecker/
@@ -32,7 +32,7 @@ displayURL = "https://aurum-mc.de/" #optional
 authors = "Sxnail" #optional
 
 # The description text for the mod (multi line!) (#mandatory)
-description = '''Adds Emerald Stuff'''
+description = '''Add daily/playtime Rewards'''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.
 #[[mixins]]

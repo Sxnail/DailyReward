@@ -24,6 +24,6 @@ C:\\Users\\pauld\\.gradle\\caches\\neoformruntime\\assets
 dailyrewards
 --all
 --output
-C:\\Users\\pauld\\Desktop\\DailyRewardsuntitled\\src\\generated\\resources
+"C:\\Users\\pauld\\Desktop\\Minecraft Stuff\\Create war und so\\DailyRewardsuntitled\\src\\generated\\resources"
 --existing
-C:\\Users\\pauld\\Desktop\\DailyRewardsuntitled\\src\\main\\resources
+"C:\\Users\\pauld\\Desktop\\Minecraft Stuff\\Create war und so\\DailyRewardsuntitled\\src\\main\\resources"

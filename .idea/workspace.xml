@@ -4,58 +4,73 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0abf358c-2094-4fd4-a2b8-78775d516ae2" name="Changes" comment="ERs5te funktionierende Version mit ems ohne GUI">
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/sxnail/dailyrewards/RewardItems.java" afterDir="false" />
+    <list default="true" id="0abf358c-2094-4fd4-a2b8-78775d516ae2" name="Changes" comment="1.0.0.&#10;No Interface just Commands">
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/sxnail/dailyrewards/DailyMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/sxnail/dailyrewards/DailyMenuProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/sxnail/dailyrewards/MenuClickHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/448y5hj9mfm1289lrcw783fle/buildfingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/configuration-cache/448y5hj9mfm1289lrcw783fle/buildfingerprint.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/448y5hj9mfm1289lrcw783fle/entry.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/configuration-cache/448y5hj9mfm1289lrcw783fle/entry.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/448y5hj9mfm1289lrcw783fle/projectfingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/configuration-cache/448y5hj9mfm1289lrcw783fle/projectfingerprint.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/448y5hj9mfm1289lrcw783fle/work.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/configuration-cache/448y5hj9mfm1289lrcw783fle/work.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/4ta0poxt2yqoguajjxjspzyls/buildfingerprint.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/4ta0poxt2yqoguajjxjspzyls/entry.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/4ta0poxt2yqoguajjxjspzyls/projectfingerprint.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/4ta0poxt2yqoguajjxjspzyls/work.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/5hbj2hzgvadrv4ekp7xldy9vy/buildfingerprint.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/5hbj2hzgvadrv4ekp7xldy9vy/entry.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/5hbj2hzgvadrv4ekp7xldy9vy/projectfingerprint.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/5hbj2hzgvadrv4ekp7xldy9vy/work.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/de/sxnail/dailyrewards/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/de/sxnail/dailyrewards/Config.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/de/sxnail/dailyrewards/Dailyrewards.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/de/sxnail/dailyrewards/Dailyrewards.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/de/sxnail/dailyrewards/RewardCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/de/sxnail/dailyrewards/RewardCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/de/sxnail/dailyrewards/DailyClaimCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/de/sxnail/dailyrewards/DailyClaimCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated/sources/modMetadata/META-INF/neoforge.mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated/sources/modMetadata/META-INF/neoforge.mods.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/moddev/clientLegacyClasspath.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/clientLegacyClasspath.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/moddev/clientRunVmArgs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/clientRunVmArgs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/moddev/dataLegacyClasspath.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/dataLegacyClasspath.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/moddev/dataRunProgramArgs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/dataRunProgramArgs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/moddev/dataRunVmArgs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/dataRunVmArgs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/moddev/gameTestServerLegacyClasspath.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/gameTestServerLegacyClasspath.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/moddev/gameTestServerRunVmArgs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/gameTestServerRunVmArgs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/moddev/minecraft_assets.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/minecraft_assets.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/moddev/serverLegacyClasspath.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/serverLegacyClasspath.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/moddev/serverRunVmArgs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/moddev/serverRunVmArgs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/META-INF/neoforge.mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/META-INF/neoforge.mods.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/downloadAssets/nfrt_artifact_manifest.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/downloadAssets/nfrt_artifact_manifest.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/command_history.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/command_history.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/config/dailyrewards-common.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2026-09-23-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2026-09-23-10.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2026-09-23-10.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2026-09-23-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2026-09-23-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2026-09-23-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2026-09-23-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2026-09-23-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2026-09-23-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2026-09-23-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2026-09-23-5.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2026-09-23-6.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2026-09-23-6.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2026-09-23-7.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2026-09-23-7.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2026-09-23-8.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2026-09-23-8.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2026-09-23-9.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2026-09-23-9.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM-1/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM-1/data/raids.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM1/data/raids_end.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM1/data/raids_end.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/advancements/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/raids.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/data/random_sequences.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/random_sequences.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/entities/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/entities/r.-1.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/entities/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/entities/r.-1.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/entities/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/entities/r.0.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/entities/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/entities/r.0.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat_old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat_old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/poi/r.-1.-1.mca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/poi/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/poi/r.-1.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/poi/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/poi/r.0.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/poi/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/poi/r.0.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.0.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/options.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/options.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/sxnail/dailyrewards/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sxnail/dailyrewards/Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/sxnail/dailyrewards/DailyClaimCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sxnail/dailyrewards/DailyClaimCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/sxnail/dailyrewards/Dailyrewards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sxnail/dailyrewards/Dailyrewards.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/sxnail/dailyrewards/PlaytimeRewardCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sxnail/dailyrewards/PlaytimeRewardCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/sxnail/dailyrewards/PlaytimeTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sxnail/dailyrewards/PlaytimeTracker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/sxnail/dailyrewards/RewardCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sxnail/dailyrewards/RewardCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/sxnail/dailyrewards/RewardDataManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/sxnail/dailyrewards/RewardSavedData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/sxnail/dailyrewards/RewardSavedData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +104,13 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="DailyRewardsuntitled" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="mod development" type="c8890929:TasksNode$1" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="DailyRewardsuntitled" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="publishing" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -138,21 +159,25 @@
   &quot;keyToString&quot;: {
     &quot;Gradle.Build DailyRewardsuntitled.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.C:/Users/pauld/Desktop/DailyRewardsuntitled [wrapper].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.DailyRewardsuntitled [:net.neoforged.devlaunch.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.DailyRewardsuntitled [build].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.DailyRewardsuntitled [runClient].executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pauld/Desktop/Minecraft Stuff/Create war und so/DailyRewardsuntitled&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.DailyRewardsuntitled [runClient]">
+  <component name="RunManager" selected="Gradle.DailyRewardsuntitled [build]">
     <configuration name="Client" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
       <module name="DailyRewardsuntitled.main" />
-      <option name="PROGRAM_PARAMETERS" value="@C:\\Users\\pauld\\Desktop\\DailyRewardsuntitled\\build\\moddev\\clientRunProgramArgs.txt" />
-      <option name="VM_PARAMETERS" value="@C:\\Users\\pauld\\Desktop\\DailyRewardsuntitled\\build\\moddev\\clientRunVmArgs.txt -Dfml.modFolders=dailyrewards%%C:\\Users\\pauld\\Desktop\\DailyRewardsuntitled\\build\\classes\\java\\main;dailyrewards%%C:\\Users\\pauld\\Desktop\\DailyRewardsuntitled\\build\\resources\\main" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;@C:\\Users\\pauld\\Desktop\\Minecraft Stuff\\Create war und so\\DailyRewardsuntitled\\build\\moddev\\clientRunProgramArgs.txt&quot;" />
+      <option name="VM_PARAMETERS" value="&quot;@C:\\Users\\pauld\\Desktop\\Minecraft Stuff\\Create war und so\\DailyRewardsuntitled\\build\\moddev\\clientRunVmArgs.txt&quot; &quot;-Dfml.modFolders=dailyrewards%%C:\\Users\\pauld\\Desktop\\Minecraft Stuff\\Create war und so\\DailyRewardsuntitled\\build\\classes\\java\\main;dailyrewards%%C:\\Users\\pauld\\Desktop\\Minecraft Stuff\\Create war und so\\DailyRewardsuntitled\\build\\resources\\main&quot;" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -161,8 +186,8 @@
     <configuration name="Data" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
       <module name="DailyRewardsuntitled.main" />
-      <option name="PROGRAM_PARAMETERS" value="@C:\\Users\\pauld\\Desktop\\DailyRewardsuntitled\\build\\moddev\\dataRunProgramArgs.txt" />
-      <option name="VM_PARAMETERS" value="@C:\\Users\\pauld\\Desktop\\DailyRewardsuntitled\\build\\moddev\\dataRunVmArgs.txt -Dfml.modFolders=dailyrewards%%C:\\Users\\pauld\\Desktop\\DailyRewardsuntitled\\build\\classes\\java\\main;dailyrewards%%C:\\Users\\pauld\\Desktop\\DailyRewardsuntitled\\build\\resources\\main" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;@C:\\Users\\pauld\\Desktop\\Minecraft Stuff\\Create war und so\\DailyRewardsuntitled\\build\\moddev\\dataRunProgramArgs.txt&quot;" />
+      <option name="VM_PARAMETERS" value="&quot;@C:\\Users\\pauld\\Desktop\\Minecraft Stuff\\Create war und so\\DailyRewardsuntitled\\build\\moddev\\dataRunVmArgs.txt&quot; &quot;-Dfml.modFolders=dailyrewards%%C:\\Users\\pauld\\Desktop\\Minecraft Stuff\\Create war und so\\DailyRewardsuntitled\\build\\classes\\java\\main;dailyrewards%%C:\\Users\\pauld\\Desktop\\Minecraft Stuff\\Create war und so\\DailyRewardsuntitled\\build\\resources\\main&quot;" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -171,8 +196,8 @@
     <configuration name="GameTestServer" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
       <module name="DailyRewardsuntitled.main" />
-      <option name="PROGRAM_PARAMETERS" value="@C:\\Users\\pauld\\Desktop\\DailyRewardsuntitled\\build\\moddev\\gameTestServerRunProgramArgs.txt" />
-      <option name="VM_PARAMETERS" value="@C:\\Users\\pauld\\Desktop\\DailyRewardsuntitled\\build\\moddev\\gameTestServerRunVmArgs.txt -Dfml.modFolders=dailyrewards%%C:\\Users\\pauld\\Desktop\\DailyRewardsuntitled\\build\\classes\\java\\main;dailyrewards%%C:\\Users\\pauld\\Desktop\\DailyRewardsuntitled\\build\\resources\\main" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;@C:\\Users\\pauld\\Desktop\\Minecraft Stuff\\Create war und so\\DailyRewardsuntitled\\build\\moddev\\gameTestServerRunProgramArgs.txt&quot;" />
+      <option name="VM_PARAMETERS" value="&quot;@C:\\Users\\pauld\\Desktop\\Minecraft Stuff\\Create war und so\\DailyRewardsuntitled\\build\\moddev\\gameTestServerRunVmArgs.txt&quot; &quot;-Dfml.modFolders=dailyrewards%%C:\\Users\\pauld\\Desktop\\Minecraft Stuff\\Create war und so\\DailyRewardsuntitled\\build\\classes\\java\\main;dailyrewards%%C:\\Users\\pauld\\Desktop\\Minecraft Stuff\\Create war und so\\DailyRewardsuntitled\\build\\resources\\main&quot;" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -181,12 +206,34 @@
     <configuration name="Server" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
       <module name="DailyRewardsuntitled.main" />
-      <option name="PROGRAM_PARAMETERS" value="@C:\\Users\\pauld\\Desktop\\DailyRewardsuntitled\\build\\moddev\\serverRunProgramArgs.txt" />
-      <option name="VM_PARAMETERS" value="@C:\\Users\\pauld\\Desktop\\DailyRewardsuntitled\\build\\moddev\\serverRunVmArgs.txt -Dfml.modFolders=dailyrewards%%C:\\Users\\pauld\\Desktop\\DailyRewardsuntitled\\build\\classes\\java\\main;dailyrewards%%C:\\Users\\pauld\\Desktop\\DailyRewardsuntitled\\build\\resources\\main" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;@C:\\Users\\pauld\\Desktop\\Minecraft Stuff\\Create war und so\\DailyRewardsuntitled\\build\\moddev\\serverRunProgramArgs.txt&quot;" />
+      <option name="VM_PARAMETERS" value="&quot;@C:\\Users\\pauld\\Desktop\\Minecraft Stuff\\Create war und so\\DailyRewardsuntitled\\build\\moddev\\serverRunVmArgs.txt&quot; &quot;-Dfml.modFolders=dailyrewards%%C:\\Users\\pauld\\Desktop\\Minecraft Stuff\\Create war und so\\DailyRewardsuntitled\\build\\classes\\java\\main;dailyrewards%%C:\\Users\\pauld\\Desktop\\Minecraft Stuff\\Create war und so\\DailyRewardsuntitled\\build\\resources\\main&quot;" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="DailyRewardsuntitled [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
     </configuration>
     <configuration name="DailyRewardsuntitled [runClient]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -212,6 +259,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.DailyRewardsuntitled [build]" />
         <item itemvalue="Gradle.DailyRewardsuntitled [runClient]" />
       </list>
     </recent_temporary>
@@ -264,12 +312,21 @@
       <option name="project" value="LOCAL" />
       <updated>1790160253836</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="1.0.0.&#10;No Interface just Commands">
+      <option name="closed" value="true" />
+      <created>1790170434627</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1790170434627</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Daily Rewards Mod" />
     <MESSAGE value="ERs5te funktionierende Version mit ems ohne GUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="ERs5te funktionierende Version mit ems ohne GUI" />
+    <MESSAGE value="1.0.0.&#10;No Interface just Commands" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.0.0.&#10;No Interface just Commands" />
   </component>
 </project>

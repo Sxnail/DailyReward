@@ -21,11 +21,11 @@ public class Config {
 
     public static final ModConfigSpec.IntValue DAILY_AMOUNT =
             BUILDER.comment("Daily reward amount")
-                    .defineInRange("dailyAmount", 25, 1, 100000);
+                    .defineInRange("dailyAmount", 16, 1, 100000);
 
     public static final ModConfigSpec.IntValue PLAYTIME_AMOUNT =
             BUILDER.comment("Playtime reward amount")
-                    .defineInRange("playtimeAmount", 10, 1, 100000);
+                    .defineInRange("playtimeAmount", 8, 1, 100000);
 
     public static final ModConfigSpec.IntValue REQUIRED_MINUTES =
             BUILDER.comment("Minutes required for playtime reward")
